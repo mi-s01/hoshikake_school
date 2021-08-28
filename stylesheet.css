@@ -462,6 +462,10 @@ section {
     margin-bottom: 10vw;
 }
 
+.key_parson::before {
+
+}
+
 .card_wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -472,7 +476,8 @@ section {
 .card {
     position: relative;
     margin-bottom: 4vw;
-    min-width: 200px;
+    min-width: 100px;
+    margin: 2vw 2vw;
 }
 
 .card_img:hover{
@@ -487,7 +492,7 @@ section {
     transform: translate(-40%, -40%);
     -webkit-transform: translate(-40%, -40%);
     -ms-transform: translate(-40%, -40%);
-    font-size: 1.4vw;
+    font-size: 2vw;
     line-height: 1.7;
     z-index: -1;
 }
@@ -497,24 +502,99 @@ section {
     opacity: 100%;
 }
 
-.card_img {
-    width: 20vw;
-}
-
 .mission p{
     margin-bottom: 3vw;
+    font-size: 3vw;
 }
 
 .rouka {
     width: 100%;
     object-fit: cover;
+    vertical-align: bottom;
 }
 
 iframe {
     width: 100%;
     object-fit: cover;
     filter:grayscale(90%);
-    -webkit-filter:grayscale(90%)
+    -webkit-filter:grayscale(90%);
     margin-bottom: 12vw;
 }
 
+#ticket {
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.list {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+.list dt {
+    font-size: 2vw;
+    width: 15vw;
+    height: 6vw;
+    line-height: 3;
+    background-color: #7C0000;
+    border: 2px solid #111111;
+}
+
+.list dd {
+    font-size: 2vw;
+    width: 20vw;
+    height: 6vw;
+    line-height: 3;
+    background-color: #484444;
+    border: 2px solid #111111;
+}
+
+.adult {
+    margin-bottom: 6vw;
+}
+
+.small_text {
+    font-size: 1.4vw;
+}
+
+#ticket p {
+    font-size: 1.4vw;
+}
+
+.btn_top img{
+    margin: 6vw 0;
+}
+
+
+footer {
+    height: 6vw;
+    background-color: #7C0000;
+}
+
+.footer_inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    display: inline-block;
+    font-size: 1.6vw;
+    color: #FFFFFF;
+    line-height: 6vw;
+}
+
+@media screen and (max-width: 559px) {
+    .spider_wrapper {
+        display: none;
+    }
+
+    .list dt {
+    line-height: 2.5;
+    }
+
+    .list dd {
+    line-height: 2.5;
+    }
+}
