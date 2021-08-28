@@ -458,12 +458,33 @@ section {
 }
 
 .key_parson {
+    width:40vw;
+    margin: 0 auto;
+    position:relative;
+    padding: 15px 30px;
     font-size: 3.4vw;
     margin-bottom: 10vw;
 }
 
-.key_parson::before {
+.key_parson::before, .key_parson::after {
+    position: absolute;
+    content: "";
+    width: 3vw;
+    height: 6vw;
+}
 
+.key_parson::before {
+    top: 0;
+    left: 0;
+    border-top: 1px solid #7C0000;
+    border-left: 1px solid #7C0000;
+}
+
+.key_parson::after {
+    bottom: 0;
+    right: 0;
+    border-bottom: 1px solid #7C0000;
+    border-right: 1px solid #7C0000;
 }
 
 .card_wrapper {
@@ -591,8 +612,12 @@ footer p {
     }
 
     .card_text {
-        font-size: 4vw;
+        font-size: 3vw;
     }
+
+    .mission p{
+    font-size: 4vw;
+}
 
     .list dt {
     line-height: 2.5;
