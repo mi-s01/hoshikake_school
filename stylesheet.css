@@ -476,7 +476,7 @@ section {
 .card {
     position: relative;
     margin-bottom: 4vw;
-    min-width: 100px;
+    flex-basis: 200px;
     margin: 2vw 2vw;
 }
 
