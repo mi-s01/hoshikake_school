@@ -590,6 +590,10 @@ footer p {
         display: none;
     }
 
+    .card_text {
+        font-size: 4vw;
+    }
+
     .list dt {
     line-height: 2.5;
     }
